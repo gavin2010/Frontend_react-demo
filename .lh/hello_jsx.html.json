@@ -1,0 +1,42 @@
+{
+    "sourceFile": "hello_jsx.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1680149812685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1680149840929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n </head>\r\n <body>\r\n     <div id=\"root\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n-    <script src=\"./js/hello_react.js\"></script>\r\n+    <script type=\"text/babel\"></script>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680149861917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,10 @@\n </head>\r\n <body>\r\n     <div id=\"root\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n-    <script type=\"text/babel\"></script>\r\n+    <script type=\"text/babel\">\r\n+        const e = document.querySelector(\"#root\")\r\n+    </script>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680149887718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n <body>\r\n     <div id=\"root\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n     <script type=\"text/babel\">\r\n-        const e = document.querySelector(\"#root\")\r\n+        const e = document.querySelector(\"#root\");\r\n+        e.render(<h2></h2>);\r\n     </script>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680149904993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <div id=\"root\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n     <script type=\"text/babel\">\r\n         const e = document.querySelector(\"#root\");\r\n-        e.render(<h2></h2>);\r\n+        e.render(<h2>Hello,Jsx!</h2>);\r\n     </script>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680149987991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n <body>\r\n     <div id=\"root\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n     <script type=\"text/babel\">\r\n-        const e = document.querySelector(\"#root\");\r\n+        const e = ReactDOM.createRoot(document.querySelector(\"#root\"));\r\n         e.render(<h2>Hello,Jsx!</h2>);\r\n     </script>\r\n \r\n </body>\r\n"
+                },
+                {
+                    "date": 1680150093279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n <body>\r\n     <div id=\"root\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n     <script type=\"text/babel\">\r\n-        const e = ReactDOM.createRoot(document.querySelector(\"#root\"));\r\n+        const e = ReactDOM.createElement(document.querySelector(\"#root\"));\r\n         e.render(<h2>Hello,Jsx!</h2>);\r\n     </script>\r\n \r\n </body>\r\n"
+                }
+            ],
+            "date": 1680149812685,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>hello react</title>\r\n    <script src=\"./js/react.development.js\" ></script>\r\n    <script src=\"./js/react-dom.development.js\" ></script>\r\n    <script src=\"./js/react-babel.min.js\"></script>\r\n</head>\r\n<body>\r\n    <div id=\"root\"></div>\r\n    <!-- 必须放在body中，需要在页面加载后才执行-->\r\n    <script src=\"./js/hello_react.js\"></script>\r\n\r\n</body>\r\n</html>"
+        }
+    ]
+}

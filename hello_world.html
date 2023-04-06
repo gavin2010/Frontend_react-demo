@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+    <script src="./js/react.development.js" ></script>
+    <script src="./js/react-dom.development.js" ></script>
+</head>
+<body>
+    <div id="example"></div>
+    <!-- 不使用JSX语法，就不引入babel.js，script标签就不需要设置type='text/babel',但是元素只能通过React.creatElement方式创建-->
+    <script>
+        ReactDOM.render(
+            React.createElement('button',{onClick:()=>{}},'hello world!'),
+            document.querySelector('#example')
+            );
+    </script>
+    <script type="text/javascript">
+        console.log('验证引入是否成功：React、ReactDom');
+        console.log(React);  //测试引入是否成功
+        console.log(ReactDOM);  //测试引入是否成功
+    </script>
+</body>
+</html>

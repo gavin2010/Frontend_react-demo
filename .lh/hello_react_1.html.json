@@ -1,0 +1,190 @@
+{
+    "sourceFile": "hello_react_1.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 43,
+            "patches": [
+                {
+                    "date": 1680145606348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1680145615298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n </head>\r\n <body>\r\n-    <div id=\"example\"></div>\r\n+    <div id=\"root\"></div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680145703915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n+    <script src=\"./js/react-dom.development.js\" ></script>\r\n </head>\r\n <body>\r\n     <div id=\"root\"></div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1680145709942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/react-dom.development.js\" ></script>\r\n+    <script src=\"./js/hello_react.js\" ></script>\r\n </head>\r\n <body>\r\n     <div id=\"root\"></div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1680145801162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     <script src=\"./js/hello_react.js\" ></script>\r\n </head>\r\n <body>\r\n-    <div id=\"root\"></div>\r\n+    <div id=\"example\"></div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680145840263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,12 @@\n     <script src=\"./js/hello_react.js\" ></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n+    <script>\r\n+        ReactDOM.render(\r\n+    React.createElement('button',{onClick:()=>{}},'hello world!'),\r\n+    document.querySelector('#example')\r\n+    );\r\n+    </script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680145880655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,13 +7,8 @@\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     <script src=\"./js/hello_react.js\" ></script>\r\n </head>\r\n <body>\r\n-    <div id=\"example\"></div>\r\n-    <script>\r\n-        ReactDOM.render(\r\n-    React.createElement('button',{onClick:()=>{}},'hello world!'),\r\n-    document.querySelector('#example')\r\n-    );\r\n-    </script>\r\n+    <div id=\"root\"></div>\r\n+\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680145923653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     <script src=\"./js/hello_react.js\" ></script>\r\n </head>\r\n <body>\r\n-    <div id=\"root\"></div>\r\n+    <div id=\"example\"></div>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680146293820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/hello_react.js\" ></script>\r\n+    <script src=\"./js/hello_react.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n \r\n"
+                },
+                {
+                    "date": 1680146344803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,13 @@\n     <script src=\"./js/hello_react.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n-\r\n+    <script>\r\n+    ReactDOM.render(\r\n+        React.createElement('button',{},'hello world!'),\r\n+        document.querySelector('#example')\r\n+    );\r\n+    \r\n+</script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680146352073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,17 +4,19 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/hello_react.js\"></script>\r\n+    <script src=\"./js/hello_react.js\">\r\n+            ReactDOM.render(\r\n+        React.createElement('button',{},'hello world!'),\r\n+        document.querySelector('#example')\r\n+    );\r\n+    </script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <script>\r\n-    ReactDOM.render(\r\n-        React.createElement('button',{},'hello world!'),\r\n-        document.querySelector('#example')\r\n-    );\r\n+\r\n     \r\n </script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680146363470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     <script src=\"./js/hello_react.js\">\r\n-            ReactDOM.render(\r\n+        ReactDOM.render(\r\n         React.createElement('button',{},'hello world!'),\r\n         document.querySelector('#example')\r\n     );\r\n     </script>\r\n"
+                },
+                {
+                    "date": 1680146374507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,18 +5,18 @@\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     <script src=\"./js/hello_react.js\">\r\n-        ReactDOM.render(\r\n-        React.createElement('button',{},'hello world!'),\r\n-        document.querySelector('#example')\r\n+       \r\n     );\r\n     </script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <script>\r\n-\r\n+ ReactDOM.render(\r\n+        React.createElement('button',{},'hello world!'),\r\n+        document.querySelector('#example')\r\n     \r\n </script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680146383531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,17 +6,17 @@\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     <script src=\"./js/hello_react.js\">\r\n        \r\n-    );\r\n+  \r\n     </script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <script>\r\n- ReactDOM.render(\r\n-        React.createElement('button',{},'hello world!'),\r\n-        document.querySelector('#example')\r\n-    \r\n-</script>\r\n+    ReactDOM.render(\r\n+            React.createElement('button',{},'hello world!'),\r\n+            document.querySelector('#example')\r\n+            );\r\n+    </script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680146569934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,11 +12,8 @@\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <script>\r\n-    ReactDOM.render(\r\n-            React.createElement('button',{},'hello world!'),\r\n-            document.querySelector('#example')\r\n-            );\r\n+  \r\n     </script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680146725593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,6 @@\n     </script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n-    <script>\r\n-  \r\n-    </script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680146802145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <!DOCTYPE html>\r\n-<html lang=\"en\">\r\n+<html>\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n"
+                },
+                {
+                    "date": 1680146812205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/hello_react.js\">\r\n-       \r\n-  \r\n-    </script>\r\n+    <script src=\"./js/hello_react.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1680146885555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,25 @@\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     <script src=\"./js/hello_react.js\"></script>\r\n </head>\r\n <body>\r\n-    <div id=\"example\"></div>\r\n+   \r\n+    <h2>Add React in One Minute</h2>\r\n+    <p>This page demonstrates using React with no build tooling.</p>\r\n+    <p>React is loaded as a script tag.</p>\r\n+\r\n+    <!-- We will put our React component inside this div. -->\r\n+    <div id=\"like_button_container\"></div>\r\n+\r\n+    <!-- Load React. -->\r\n+    <!-- Note: when deploying, replace \"development.js\" with \"production.min.js\". -->\r\n+\r\n+    <!-- <script src=\"https://unpkg.com/react@16/umd/react.development.js\" crossorigin></script>\r\n+    <script src=\"https://unpkg.com/react-dom@16/umd/react-dom.development.js\" crossorigin></script> -->\r\n+   \r\n+    <script src=\"./js/react.development.js\" ></script>\r\n+    <script src=\"./js/react-dom.development.js\" ></script>\r\n+    \r\n+    <!-- Load our React component. -->\r\n+    <script src=\"./js/like_button.js\"></script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680146925661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,12 @@\n <!DOCTYPE html>\r\n <html>\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <title>hello react</title>\r\n-    <script src=\"./js/react.development.js\" ></script>\r\n-    <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/hello_react.js\"></script>\r\n-</head>\r\n-<body>\r\n-   \r\n+  <head>\r\n+    <meta charset=\"UTF-8\" />\r\n+    <title>Add React in One Minute</title>\r\n+  </head>\r\n+  <body>\r\n+\r\n     <h2>Add React in One Minute</h2>\r\n     <p>This page demonstrates using React with no build tooling.</p>\r\n     <p>React is loaded as a script tag.</p>\r\n \r\n@@ -26,6 +23,7 @@\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     \r\n     <!-- Load our React component. -->\r\n     <script src=\"./js/like_button.js\"></script>\r\n-</body>\r\n+\r\n+  </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680146936367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,15 @@\n <!DOCTYPE html>\r\n <html>\r\n-  <head>\r\n-    <meta charset=\"UTF-8\" />\r\n-    <title>Add React in One Minute</title>\r\n-  </head>\r\n-  <body>\r\n-\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <title>hello react</title>\r\n+    <script src=\"./js/react.development.js\" ></script>\r\n+    <script src=\"./js/react-dom.development.js\" ></script>\r\n+    <script src=\"./js/hello_react.js\"></script>\r\n+</head>\r\n+<body>\r\n+   \r\n     <h2>Add React in One Minute</h2>\r\n     <p>This page demonstrates using React with no build tooling.</p>\r\n     <p>React is loaded as a script tag.</p>\r\n \r\n@@ -23,7 +26,6 @@\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     \r\n     <!-- Load our React component. -->\r\n     <script src=\"./js/like_button.js\"></script>\r\n-\r\n-  </body>\r\n+</body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680146952051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/hello_react.js\"></script>\r\n+    <script src=\"./js/like_button.js\"></script>\r\n </head>\r\n <body>\r\n    \r\n     <h2>Add React in One Minute</h2>\r\n"
+                },
+                {
+                    "date": 1680147000466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,10 @@\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     <script src=\"./js/like_button.js\"></script>\r\n+\r\n+    \r\n </head>\r\n <body>\r\n    \r\n     <h2>Add React in One Minute</h2>\r\n"
+                },
+                {
+                    "date": 1680147009662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,8 @@\n <html>\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n-    <script src=\"./js/react.development.js\" ></script>\r\n-    <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/like_button.js\"></script>\r\n-\r\n-    \r\n </head>\r\n <body>\r\n    \r\n     <h2>Add React in One Minute</h2>\r\n"
+                },
+                {
+                    "date": 1680147044344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,24 +5,19 @@\n     <title>hello react</title>\r\n </head>\r\n <body>\r\n    \r\n-    <h2>Add React in One Minute</h2>\r\n-    <p>This page demonstrates using React with no build tooling.</p>\r\n-    <p>React is loaded as a script tag.</p>\r\n-\r\n-    <!-- We will put our React component inside this div. -->\r\n-    <div id=\"like_button_container\"></div>\r\n-\r\n-    <!-- Load React. -->\r\n-    <!-- Note: when deploying, replace \"development.js\" with \"production.min.js\". -->\r\n-\r\n-    <!-- <script src=\"https://unpkg.com/react@16/umd/react.development.js\" crossorigin></script>\r\n-    <script src=\"https://unpkg.com/react-dom@16/umd/react-dom.development.js\" crossorigin></script> -->\r\n-   \r\n-    <script src=\"./js/react.development.js\" ></script>\r\n-    <script src=\"./js/react-dom.development.js\" ></script>\r\n-    \r\n-    <!-- Load our React component. -->\r\n-    <script src=\"./js/like_button.js\"></script>\r\n+    <div id=\"example\"></div>\r\n+    <!-- 不使用JSX语法，就不引入babel.js，script标签就不需要设置type='text/babel',但是元素只能通过React.creatElement方式创建-->\r\n+    <script>\r\n+        ReactDOM.render(\r\n+            React.createElement('button',{onClick:()=>{}},'hello world!'),\r\n+            document.querySelector('#example')\r\n+            );\r\n+    </script>\r\n+    <script type=\"text/javascript\">\r\n+        console.log('验证引入是否成功：React、ReactDom');\r\n+        console.log(React);  //测试引入是否成功\r\n+        console.log(ReactDOM);  //测试引入是否成功\r\n+    </script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680147051554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,20 +4,7 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n </head>\r\n <body>\r\n-   \r\n     <div id=\"example\"></div>\r\n-    <!-- 不使用JSX语法，就不引入babel.js，script标签就不需要设置type='text/babel',但是元素只能通过React.creatElement方式创建-->\r\n-    <script>\r\n-        ReactDOM.render(\r\n-            React.createElement('button',{onClick:()=>{}},'hello world!'),\r\n-            document.querySelector('#example')\r\n-            );\r\n-    </script>\r\n-    <script type=\"text/javascript\">\r\n-        console.log('验证引入是否成功：React、ReactDom');\r\n-        console.log(React);  //测试引入是否成功\r\n-        console.log(ReactDOM);  //测试引入是否成功\r\n-    </script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680147061254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n <html>\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n+    <script src=\"./js/react.development.js\" ></script>\r\n+    <script src=\"./js/react-dom.development.js\" ></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1680147085193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,10 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n+    <script src=\"./js/react-dom.development.js\" ></script>\r\n+\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1680147094096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/react-dom.development.js\" ></script>\r\n+    <script src=\"./js/hello_react.js\" ></script>\r\n \r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n"
+                },
+                {
+                    "date": 1680147205628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,12 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/hello_react.js\" ></script>\r\n \r\n+\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n+    <script src=\"./js/hello_react.js\" ></script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680147222542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,15 @@\n <html>\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n-    <script src=\"./js/react.development.js\" ></script>\r\n-    <script src=\"./js/react-dom.development.js\" ></script>\r\n \r\n \r\n+\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n+    <script src=\"./js/react.development.js\" ></script>\r\n+    <script src=\"./js/react-dom.development.js\" ></script>\r\n     <script src=\"./js/hello_react.js\" ></script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680147267692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,15 +2,15 @@\n <html>\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n+    <script src=\"./js/react.development.js\" ></script>\r\n+    <script src=\"./js/react-dom.development.js\" ></script>\r\n \r\n \r\n-\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n-    <script src=\"./js/react.development.js\" ></script>\r\n-    <script src=\"./js/react-dom.development.js\" ></script>\r\n+\r\n     <script src=\"./js/hello_react.js\" ></script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680147276598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,12 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-\r\n-\r\n+    <script src=\"./js/hello_react.js\" ></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n \r\n-    <script src=\"./js/hello_react.js\" ></script>\r\n+\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680147293585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,12 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/hello_react.js\" ></script>\r\n+   \r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n+    <script src=\"./js/hello_react.js\" ></script>\r\n \r\n-\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680147897445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-   \r\n+    <script src=\"./js/react-babel.min.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <script src=\"./js/hello_react.js\" ></script>\r\n"
+                },
+                {
+                    "date": 1680147921828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n     <script src=\"./js/react-babel.min.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n+    <!-- 必须放在 body中，需要在页面加载后才执行-->\r\n     <script src=\"./js/hello_react.js\" ></script>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680147930326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <script src=\"./js/react-babel.min.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n-    <!-- 必须放在 body中，需要在页面加载后才执行-->\r\n+    <!-- 必须放在body中，需要在页面加载后才执行-->\r\n     <script src=\"./js/hello_react.js\" ></script>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680147947240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n-    <script src=\"./js/hello_react.js\" ></script>\r\n+    <script src=\"./js/hello_react.js\" type=\"text/babel\"></script>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680147984419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,13 @@\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n-    <script src=\"./js/hello_react.js\" type=\"text/babel\"></script>\r\n+    <script src=\"./js/hello_react.js\" type=\"text/babel\">\r\n+        ReactDOM.render(\r\n+    <h2>Hello,React</h2>,\r\n+    document.getElementById(\"example\")\r\n+)\r\n+    </script>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680147995515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n     <div id=\"example\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n     <script src=\"./js/hello_react.js\" type=\"text/babel\">\r\n         ReactDOM.render(\r\n-    <h2>Hello,React</h2>,\r\n-    document.getElementById(\"example\")\r\n-)\r\n+            <h2>Hello,React</h2>,\r\n+            document.getElementById(\"example\")\r\n+        )\r\n     </script>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680148019981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n-    <script src=\"./js/hello_react.js\" type=\"text/babel\">\r\n+    <script  type=\"text/babel\">\r\n         ReactDOM.render(\r\n             <h2>Hello,React</h2>,\r\n             document.getElementById(\"example\")\r\n         )\r\n"
+                },
+                {
+                    "date": 1680148034676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n-    <script  type=\"text/babel\">\r\n+    <script src=\"./js/hello_react.js\">\r\n         ReactDOM.render(\r\n             <h2>Hello,React</h2>,\r\n             document.getElementById(\"example\")\r\n         )\r\n"
+                },
+                {
+                    "date": 1680148078948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,9 @@\n <body>\r\n     <div id=\"example\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n     <script src=\"./js/hello_react.js\">\r\n-        ReactDOM.render(\r\n-            <h2>Hello,React</h2>,\r\n-            document.getElementById(\"example\")\r\n-        )\r\n+     \r\n     </script>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680148301361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,8 @@\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <!-- 必须放在body中，需要在页面加载后才执行-->\r\n-    <script src=\"./js/hello_react.js\">\r\n-     \r\n-    </script>\r\n+    <script src=\"./js/hello_react.js\">    </script>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1680145606348,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>hello react</title>\r\n    <script src=\"./js/react.development.js\" ></script>\r\n    <script src=\"./js/react-dom.development.js\" ></script>\r\n</head>\r\n<body>\r\n    <div id=\"example\"></div>\r\n</body>\r\n</html>"
+        }
+    ]
+}

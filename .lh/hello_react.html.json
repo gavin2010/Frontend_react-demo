@@ -1,0 +1,134 @@
+{
+    "sourceFile": "hello_react.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 29,
+            "patches": [
+                {
+                    "date": 1680144078909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1680144099703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\r\n \t\t<div id=\"example\"></div>\r\n \t\t<script type=\"text/babel\">\r\n \t\t\tReactDOM.render(\r\n-      \t\t  <h1>Hello, world!</h1>,\r\n+      \t\t  <h1>Hello, react!</h1>,\r\n        \t\t document.getElementById('example')\r\n      \t\t );\r\n         </script>\r\n \t\t<script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680144133502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n <!DOCTYPE html>\r\n <html lang=\"en\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n-    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     <!-- <script src=\"https://www.w3cschool.cn/statics/assets/react/react.min.js\"></script>\r\n"
+                },
+                {
+                    "date": 1680144170745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <!DOCTYPE html>\r\n <html lang=\"en\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n-    <title>Document</title>\r\n+    <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n     <!-- <script src=\"https://www.w3cschool.cn/statics/assets/react/react.min.js\"></script>\r\n     <script src=\"https://www.w3cschool.cn/statics/assets/react/react-dom.min.js\"></script>\r\n"
+                },
+                {
+                    "date": 1680144277454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <body>\r\n \t\t<div id=\"example\"></div>\r\n \t\t<script type=\"text/babel\">\r\n \t\t\tReactDOM.render(\r\n-      \t\t  <h1>Hello, react!</h1>,\r\n+      \t\t React.createElement(<h1>Hello, react!</h1>),\r\n        \t\t document.getElementById('example')\r\n      \t\t );\r\n         </script>\r\n \t\t<script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680144373194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <body>\r\n \t\t<div id=\"example\"></div>\r\n \t\t<script type=\"text/babel\">\r\n \t\t\tReactDOM.render(\r\n-      \t\t React.createElement(<h1>Hello, react!</h1>),\r\n+      \t\t React.createElement('3545'),\r\n        \t\t document.getElementById('example')\r\n      \t\t );\r\n         </script>\r\n \t\t<script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680144412666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \t\t<div id=\"example\"></div>\r\n \t\t<script type=\"text/babel\">\r\n \t\t\tReactDOM.render(\r\n       \t\t React.createElement('3545'),\r\n-       \t\t document.getElementById('example')\r\n+       \t\t document.querySelector('#example')\r\n      \t\t );\r\n         </script>\r\n \t\t<script type=\"text/javascript\">\r\n             console.log('验证引入是否成功：React、ReactDom');\r\n"
+                },
+                {
+                    "date": 1680144432448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <body>\r\n \t\t<div id=\"example\"></div>\r\n \t\t<script type=\"text/babel\">\r\n \t\t\tReactDOM.render(\r\n-      \t\t React.createElement('3545'),\r\n+      \t\t React.createElement(12313),\r\n        \t\t document.querySelector('#example')\r\n      \t\t );\r\n         </script>\r\n \t\t<script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680144437816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <!-- <script src=\"./js/myreact.js\" ></script> -->\r\n </head>\r\n <body>\r\n     <body>\r\n-\t\t<div id=\"example\"></div>\r\n+\t\t<div id=\"example\">1234</div>\r\n \t\t<script type=\"text/babel\">\r\n \t\t\tReactDOM.render(\r\n       \t\t React.createElement(12313),\r\n        \t\t document.querySelector('#example')\r\n"
+                },
+                {
+                    "date": 1680144461738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,12 +11,12 @@\n     <!-- <script src=\"./js/myreact.js\" ></script> -->\r\n </head>\r\n <body>\r\n     <body>\r\n-\t\t<div id=\"example\">1234</div>\r\n+\t\t<div id=\"example\"></div>\r\n \t\t<script type=\"text/babel\">\r\n \t\t\tReactDOM.render(\r\n-      \t\t React.createElement(12313),\r\n+      \t\t <h1>123</h1>,\r\n        \t\t document.querySelector('#example')\r\n      \t\t );\r\n         </script>\r\n \t\t<script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680144646375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <body>\r\n \t\t<div id=\"example\"></div>\r\n \t\t<script type=\"text/babel\">\r\n \t\t\tReactDOM.render(\r\n-      \t\t <h1>123</h1>,\r\n+      \t\t React.createElemet('button',onclick=()=>{},'hello react!'),\r\n        \t\t document.querySelector('#example')\r\n      \t\t );\r\n         </script>\r\n \t\t<script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680144676028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <body>\r\n \t\t<div id=\"example\"></div>\r\n \t\t<script type=\"text/babel\">\r\n \t\t\tReactDOM.render(\r\n-      \t\t React.createElemet('button',onclick=()=>{},'hello react!'),\r\n+      \t\t React.createElemet('button',{onclick:()=>{}},'hello react!'),\r\n        \t\t document.querySelector('#example')\r\n      \t\t );\r\n         </script>\r\n \t\t<script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680144712599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <body>\r\n \t\t<div id=\"example\"></div>\r\n \t\t<script type=\"text/babel\">\r\n \t\t\tReactDOM.render(\r\n-      \t\t React.createElemet('button',{onclick:()=>{}},'hello react!'),\r\n+      \t\t React.createElement('button',{onclick:()=>{}},'hello react!'),\r\n        \t\t document.querySelector('#example')\r\n      \t\t );\r\n         </script>\r\n \t\t<script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680144717999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <body>\r\n \t\t<div id=\"example\"></div>\r\n \t\t<script type=\"text/babel\">\r\n \t\t\tReactDOM.render(\r\n-      \t\t React.createElement('button',{onclick:()=>{}},'hello react!'),\r\n+      \t\t React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n        \t\t document.querySelector('#example')\r\n      \t\t );\r\n         </script>\r\n \t\t<script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680144847024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n </head>\r\n <body>\r\n     <body>\r\n \t\t<div id=\"example\"></div>\r\n-\t\t<script type=\"text/babel\">\r\n+\t\t<script>\r\n \t\t\tReactDOM.render(\r\n       \t\t React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n        \t\t document.querySelector('#example')\r\n      \t\t );\r\n"
+                },
+                {
+                    "date": 1680144873218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,22 +8,24 @@\n     <!-- <script src=\"https://www.w3cschool.cn/statics/assets/react/react.min.js\"></script>\r\n     <script src=\"https://www.w3cschool.cn/statics/assets/react/react-dom.min.js\"></script>\r\n     <script src=\"https://www.w3cschool.cn/statics/assets/react/babel.min.js\"></script> -->\r\n     <!-- <script src=\"./js/myreact.js\" ></script> -->\r\n+\r\n+    <script>\r\n+        ReactDOM.render(\r\n+           React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n+            document.querySelector('#example')\r\n+          );\r\n+    </script>\r\n+    <script type=\"text/javascript\">\r\n+        console.log('验证引入是否成功：React、ReactDom');\r\n+        console.log(React);  //测试引入是否成功\r\n+        console.log(ReactDOM);  //测试引入是否成功\r\n+    </script>\r\n </head>\r\n <body>\r\n     <body>\r\n \t\t<div id=\"example\"></div>\r\n-\t\t<script>\r\n-\t\t\tReactDOM.render(\r\n-      \t\t React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n-       \t\t document.querySelector('#example')\r\n-     \t\t );\r\n-        </script>\r\n-\t\t<script type=\"text/javascript\">\r\n-            console.log('验证引入是否成功：React、ReactDom');\r\n-\t\t\tconsole.log(React);  //测试引入是否成功\r\n-\t\t\tconsole.log(ReactDOM);  //测试引入是否成功\r\n-\t\t</script>\r\n+\t\t\r\n \t</body>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680144890966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,23 +9,23 @@\n     <script src=\"https://www.w3cschool.cn/statics/assets/react/react-dom.min.js\"></script>\r\n     <script src=\"https://www.w3cschool.cn/statics/assets/react/babel.min.js\"></script> -->\r\n     <!-- <script src=\"./js/myreact.js\" ></script> -->\r\n \r\n-    <script>\r\n-        ReactDOM.render(\r\n-           React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n-            document.querySelector('#example')\r\n-          );\r\n-    </script>\r\n-    <script type=\"text/javascript\">\r\n-        console.log('验证引入是否成功：React、ReactDom');\r\n-        console.log(React);  //测试引入是否成功\r\n-        console.log(ReactDOM);  //测试引入是否成功\r\n-    </script>\r\n+   \r\n </head>\r\n <body>\r\n     <body>\r\n \t\t<div id=\"example\"></div>\r\n-\t\t\r\n+        <script>\r\n+            ReactDOM.render(\r\n+               React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n+                document.querySelector('#example')\r\n+              );\r\n+        </script>\r\n+        <script type=\"text/javascript\">\r\n+            console.log('验证引入是否成功：React、ReactDom');\r\n+            console.log(React);  //测试引入是否成功\r\n+            console.log(ReactDOM);  //测试引入是否成功\r\n+        </script>\r\n \t</body>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680144900884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,20 +12,20 @@\n \r\n    \r\n </head>\r\n <body>\r\n-    <body>\r\n-\t\t<div id=\"example\"></div>\r\n-        <script>\r\n-            ReactDOM.render(\r\n-               React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n-                document.querySelector('#example')\r\n-              );\r\n-        </script>\r\n-        <script type=\"text/javascript\">\r\n-            console.log('验证引入是否成功：React、ReactDom');\r\n-            console.log(React);  //测试引入是否成功\r\n-            console.log(ReactDOM);  //测试引入是否成功\r\n-        </script>\r\n-\t</body>\r\n+\r\n+    <div id=\"example\"></div>\r\n+    <script>\r\n+        ReactDOM.render(\r\n+            React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n+            document.querySelector('#example')\r\n+            );\r\n+    </script>\r\n+    <script type=\"text/javascript\">\r\n+        console.log('验证引入是否成功：React、ReactDom');\r\n+        console.log(React);  //测试引入是否成功\r\n+        console.log(ReactDOM);  //测试引入是否成功\r\n+    </script>\r\n+\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680144940922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,11 +12,10 @@\n \r\n    \r\n </head>\r\n <body>\r\n-\r\n     <div id=\"example\"></div>\r\n-    <script>\r\n+    <script type=\"text/javascript\">\r\n         ReactDOM.render(\r\n             React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n             document.querySelector('#example')\r\n             );\r\n@@ -25,7 +24,6 @@\n         console.log('验证引入是否成功：React、ReactDom');\r\n         console.log(React);  //测试引入是否成功\r\n         console.log(ReactDOM);  //测试引入是否成功\r\n     </script>\r\n-\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680144954780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n <body>\r\n     <div id=\"example\"></div>\r\n     <script type=\"text/javascript\">\r\n         ReactDOM.render(\r\n-            React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n+            React.createElement('button',{},'hello react!'),\r\n             document.querySelector('#example')\r\n             );\r\n     </script>\r\n     <script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680144967583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,20 +4,14 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <!-- <script src=\"https://www.w3cschool.cn/statics/assets/react/react.min.js\"></script>\r\n-    <script src=\"https://www.w3cschool.cn/statics/assets/react/react-dom.min.js\"></script>\r\n-    <script src=\"https://www.w3cschool.cn/statics/assets/react/babel.min.js\"></script> -->\r\n-    <!-- <script src=\"./js/myreact.js\" ></script> -->\r\n-\r\n-   \r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <script type=\"text/javascript\">\r\n         ReactDOM.render(\r\n-            React.createElement('button',{},'hello react!'),\r\n+            React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n             document.querySelector('#example')\r\n             );\r\n     </script>\r\n     <script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680144974940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,13 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n+    <!-- <script src=\"https://www.w3cschool.cn/statics/assets/react/react.min.js\"></script>\r\n+    <script src=\"https://www.w3cschool.cn/statics/assets/react/react-dom.min.js\"></script>\r\n+    <script src=\"https://www.w3cschool.cn/statics/assets/react/babel.min.js\"></script> -->\r\n+    <!-- <script src=\"./js/myreact.js\" ></script> -->\r\n+\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680145155500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,8 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <!-- <script src=\"https://www.w3cschool.cn/statics/assets/react/react.min.js\"></script>\r\n-    <script src=\"https://www.w3cschool.cn/statics/assets/react/react-dom.min.js\"></script>\r\n-    <script src=\"https://www.w3cschool.cn/statics/assets/react/babel.min.js\"></script> -->\r\n-    <!-- <script src=\"./js/myreact.js\" ></script> -->\r\n \r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n"
+                },
+                {
+                    "date": 1680145167151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <div id=\"example\"></div>\r\n     <script type=\"text/javascript\">\r\n         ReactDOM.render(\r\n             React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n-            document.querySelector('#example')\r\n+            document.getElementById('example')\r\n             );\r\n     </script>\r\n     <script type=\"text/javascript\">\r\n         console.log('验证引入是否成功：React、ReactDom');\r\n"
+                },
+                {
+                    "date": 1680145213294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-\r\n+    <script src=\"./js/react-dom.development.js\" ></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680145242657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/react-dom.development.js\" ></script>\r\n+    <script src=\"./js/babel.min.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680145266518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n <body>\r\n     <div id=\"example\"></div>\r\n     <script type=\"text/javascript\">\r\n         ReactDOM.render(\r\n-            React.createElement('button',{onClick:()=>{}},'hello react!'),\r\n+            <h1>Hello React!</h1>,\r\n             document.getElementById('example')\r\n             );\r\n     </script>\r\n     <script type=\"text/javascript\">\r\n"
+                },
+                {
+                    "date": 1680145280263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <script src=\"./js/babel.min.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n-    <script type=\"text/javascript\">\r\n+    <script type=\"text/babel\">\r\n         ReactDOM.render(\r\n             <h1>Hello React!</h1>,\r\n             document.getElementById('example')\r\n             );\r\n"
+                },
+                {
+                    "date": 1680145417768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n     <script src=\"./js/babel.min.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n+    <!-- 使用jsx语法就需要引入babel.js，且script的type设置text/babel-->\r\n     <script type=\"text/babel\">\r\n         ReactDOM.render(\r\n             <h1>Hello React!</h1>,\r\n             document.getElementById('example')\r\n"
+                },
+                {
+                    "date": 1680145584788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <title>hello react</title>\r\n     <script src=\"./js/react.development.js\" ></script>\r\n     <script src=\"./js/react-dom.development.js\" ></script>\r\n-    <script src=\"./js/babel.min.js\"></script>\r\n+    <script src=\"./js/react-babel.min.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"example\"></div>\r\n     <!-- 使用jsx语法就需要引入babel.js，且script的type设置text/babel-->\r\n"
+                }
+            ],
+            "date": 1680144078909,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <script src=\"./js/react.development.js\" ></script>\r\n    <script src=\"./js/react-dom.development.js\" ></script>\r\n    <!-- <script src=\"https://www.w3cschool.cn/statics/assets/react/react.min.js\"></script>\r\n    <script src=\"https://www.w3cschool.cn/statics/assets/react/react-dom.min.js\"></script>\r\n    <script src=\"https://www.w3cschool.cn/statics/assets/react/babel.min.js\"></script> -->\r\n    <!-- <script src=\"./js/myreact.js\" ></script> -->\r\n</head>\r\n<body>\r\n    <body>\r\n\t\t<div id=\"example\"></div>\r\n\t\t<script type=\"text/babel\">\r\n\t\t\tReactDOM.render(\r\n      \t\t  <h1>Hello, world!</h1>,\r\n       \t\t document.getElementById('example')\r\n     \t\t );\r\n        </script>\r\n\t\t<script type=\"text/javascript\">\r\n            console.log('验证引入是否成功：React、ReactDom');\r\n\t\t\tconsole.log(React);  //测试引入是否成功\r\n\t\t\tconsole.log(ReactDOM);  //测试引入是否成功\r\n\t\t</script>\r\n\t</body>\r\n</body>\r\n</html>"
+        }
+    ]
+}

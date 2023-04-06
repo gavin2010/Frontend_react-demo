@@ -1,0 +1,22 @@
+{
+    "sourceFile": "js/like_button.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1680143955223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1680143961034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n     return e(\n       'button',\n       { onClick: () => this.setState({ liked: true }) },\n-      'Like？'\n+      'Like'\n     );\n   }\n }\n \n"
+                }
+            ],
+            "date": 1680143955223,
+            "name": "Commit-0",
+            "content": "'use strict';\n\nconst e = React.createElement;\n\nclass LikeButton extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = { liked: false };\n  }\n\n  render() {\n    if (this.state.liked) {\n      return 'You liked this.';\n    }\n\n    return e(\n      'button',\n      { onClick: () => this.setState({ liked: true }) },\n      'Like？'\n    );\n  }\n}\n\nconst domContainer = document.querySelector('#like_button_container');\nReactDOM.render(e(LikeButton), domContainer);"
+        }
+    ]
+}
